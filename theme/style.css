@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -43,17 +45,226 @@ a, i, input, img, h1, button, figure{
 }
 
 
-.head {
+.banner{
+  background: aliceblue;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+.banner{
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0.1) insert;
+}
+.banner:before,
+.banner:after{
+  content:'';
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 1px black;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px 30px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo{
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: aliceblue;
-  height: 75px; 
+  justify-content: left;
   width: 100%;
 }
+
+.logo img{
+  object-fit: contain;
+  height: 250px;
+  width: 250px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation a{
+  padding: 0 30px;
+  display: flex;
+  color:black;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navigation a:hover{
+  background-color: #14213d;
+  color: white;
+}
+
+.navigation{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100dvh;
+  width: 250px;
+  background-image: url(../design/you.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  filter:contrast(1.5);
+  filter:saturate(1);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 10000;
+}
+
+.navigation li {
+  width: 100%;
+  line-height: 50px;
+}
+
+.option i{
+  font-size: 1.7rem;
+}
+.shown{
+  color: black;
+  gap: 10px;
+}
+.menu-button i{
+  font-size: 1.7rem;
+  color: #14213d;
+}
+.shown li a 
+{
+text-decoration: none;
+padding: 6px 15px;
+color: black;
+border-radius: 20px;
+}
+.use:hover,
+nav li a.active
+{
+background: #14213d;
+color: #fff;
+}
+
+.use i{
+  color: #ffd100;
+  font-size: 1rem;
+}
+
+.menu-button{
+  display: none;
+  cursor: pointer;
+}
+
+.btn button{
+  position: relative;
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: #ffd100;
+  transition: transform 0.2 ease;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.shown li a button:hover{
+  color: #660708;
+}
+
+.btn button:active{
+  transform: scale(0.96);
+  }
+  .btn button::before,
+  .btn button::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 150%;
+      background-repeat: no-repeat;
+      z-index: -1;
+  }
+  .btn button.animate::before{
+      top:-70%;
+      background-image: radial-gradient(circle, #ffd100 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #660708 20%, transparent 30%),
+      radial-gradient(circle, #ffd100 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #660708 15%, transparent 20%),
+      radial-gradient(circle, #ffd100 20%, transparent 20%),
+      radial-gradient(circle, #660708 20%, transparent 20%),
+      radial-gradient(circle, #ffd100 20%, transparent 20%),
+      radial-gradient(circle, #660708 20%, transparent 20%);
+      background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 
+      10% 10%, 18% 18%;
+      background-position: 5% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 
+      55% 90%, 70% 90%;
+      animation: topBubbles 0.6s ease-in-out forwards;
+  }
+  @keyframes topBubbles{
+      50%{
+          background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+          50% 50%, 65% 20%, 90% 30%;
+      }
+      100%{
+          background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+          50% 40%, 65% 10%, 90% 20%;
+          background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+  }
+  .btn button.animate::after{
+      bottom: -70%;
+      background-image: radial-gradient(circle, #ffd100 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #660708 15%, transparent 20%),
+      radial-gradient(circle, #ffd100 20%, transparent 20%),
+      radial-gradient(circle, #660708 20%, transparent 20%),
+      radial-gradient(circle, #ffd100 20%, transparent 20%),
+      radial-gradient(circle, #660708 20%, transparent 20%),
+      radial-gradient(circle, #ffd100 20%, transparent 20%);
+      background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+      background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%; 
+      animation: bottomBubbles 0.6s ease-in-out forwards;
+  }
+  @keyframes bottomBubbles{
+      50%{
+          background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+          105% 0%;
+      }
+      100%{
+          background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+          110% 10%;
+          background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+  }
 
 .bg{
   display: flex;
@@ -63,7 +274,6 @@ a, i, input, img, h1, button, figure{
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background: #3c6e71;
   height: 100dvh; 
   width: 100%;
 }
@@ -112,28 +322,11 @@ a, i, input, img, h1, button, figure{
 }
 
 
-.bg .bot{
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background: #00b4d8;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  height: 70dvh; 
-  width: 100%;
+@media(max-width: 950px){
+  .hide{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
 }
-
-.bot .top{
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  padding: 15px;
-  height: 20dvh;
-  width: 100%;
-}
-
-
-

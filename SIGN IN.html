@@ -34,16 +34,19 @@
             <div class="form-container sign-up">
                 <form>
                     <h1 id="mytitle">Create Account</h1>
+                    <input class="txt" type="text" placeholder="Name" required>
+                    <input class="txt" type="email" placeholder="Email" required>
+                    <input class="txt" type="password" placeholder="Password" minlength="8" required>
+
+                    <span>Connect your accounts here:</span>
+
                     <div class="social-icons">
                         <a href="https://www.facebook.com/vincent.yap.2002" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://x.com/Vincentyap01" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="https://www.instagram.com/centyap/" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/yapcentTV" target="_blank" rel="noopener noreferrer"class="icon"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <span>or use your email for registration</span>
-                    <input class="txt" type="text" placeholder="Name" required>
-                    <input class="txt" type="email" placeholder="Email" required>
-                    <input class="txt" type="password" placeholder="Password" minlength="8" required>
+
                     <button class="right" type="submit"><a href="#">Sign Up</a></button>
                 </form>
             </div>
@@ -51,16 +54,34 @@
             <div class="form-container sign-in">
                 <form>
                     <h1 id="mytitle">Sign In</h1>
+
+                    <input class="txt" type="email" placeholder="Email" required>
+                    <input class="txt" type="password" placeholder="Password" minlength="8" required>
+
+                  <div class="me">
+                      <div class="rep">
+                       <div class="ick">
+                        <input type="checkbox" id="check"> 
+                       </div>
+
+                        <a href="#"> Remember me</a>
+                      </div>
+
+                    <div class="well">
+                       <a href="#" class="forget">Forget your password?</a>
+                    </div>
+
+                  </div>
+
+                    <span>Connect your accounts here:</span>
+
                     <div class="social-icons">
                         <a href="https://www.facebook.com/vincent.yap.2002" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://x.com/Vincentyap01" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="https://www.instagram.com/centyap/" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/yapcentTV" target="_blank" rel="noopener noreferrer"class="icon"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <span>or use your email password</span>
-                    <input class="txt" type="email" placeholder="Email" required>
-                    <input class="txt" type="password" placeholder="Password" minlength="8" required>
-                    <a href="#">Forgot your password?</a>
+
                     <button class="left" type="submit"><a href="#">Sign In</a></button>
                 </form>
             </div>
@@ -69,7 +90,7 @@
                 <div class="toggle">
                     <div class="toggle-panel toggle-left">
                         <h1 id="greet">Welcome Back!</h1>
-                        <p>If you already have an account, <br> Sign In here and Have fun!</p>
+                        <p>If you already have an account, <br> Sign In here and have fun!</p>
                         <button class="hidden" id="login">Sign In</button>
                     </div>
                     <div class="toggle-panel toggle-right">

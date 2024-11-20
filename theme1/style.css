@@ -176,7 +176,7 @@
   }
   
   .container input:focus{
-      border: 1px outset #edf2f4;
+      outline: 1px outset #edf2f4;
   }
   
   

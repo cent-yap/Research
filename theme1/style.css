@@ -299,21 +299,40 @@
       transition: all 450ms;
   }
   .social-icons a:hover{
-     color: azure;
      transform: translateY(-10px);
   }
   
+  .social-icons a:nth-child(1) {
+    background: azure;
+    color: #004e98;
+    }
   .social-icons a:nth-child(1):hover{
-      background:#004e98;
+    background:#004e98;
+    color: azure;
   }
+  .social-icons a:nth-child(2) {
+    background: azure;
+    color: #0b090a;
+    }
   .social-icons a:nth-child(2):hover{
-      background: #0b090a;
+    background: #0b090a;
+    color: azure;
   }
+  .social-icons a:nth-child(3) {
+    background: azure;
+    color: #e1306c;
+    }
   .social-icons a:nth-child(3):hover{
-      background: #e1306c;
+    background: #e1306c;
+    color: azure;
   }
+  .social-icons a:last-child {
+    background: azure;
+    color: #0c1821;
+    }
   .social-icons a:last-child:hover{
-      background: #0c1821;
+    background: #0c1821;
+    color: azure;
   }
   
   

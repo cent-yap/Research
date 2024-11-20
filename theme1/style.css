@@ -211,7 +211,7 @@
 
   form .me input{
     margin-right: 2px;
-    margin-top: 15px;
+    margin-top: 16px;
   }
 
   form .me a{
@@ -228,11 +228,7 @@
    }
 
    form .me .rep .ick{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: left;
-    height: fit-content;
+    height: 41px;
    }
 
    form .me .well{

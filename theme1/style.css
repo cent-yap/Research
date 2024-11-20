@@ -110,13 +110,11 @@ main{
 
 .container button a{
     font-family: "Candara", sans-serif;
-    background: linear-gradient(to left, #414833, #333d29);
     color: azure;
 }
 
 .container button {
     font-family: "Candara", sans-serif;
-    background: linear-gradient(to left, #414833, #333d29);
     color: azure;
     font-size: 14px;
     padding: 10px 45px;
@@ -132,6 +130,18 @@ main{
 
 .container button:active {
   transform: scale(.9);
+}
+
+.container .left{
+    background-image: url(../design/blob.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .right{
+    background-image: url(../design/blob-1.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .txt::placeholder{
@@ -261,18 +271,14 @@ main{
     height: 100%;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
-    border-radius: 150px 0 0 150px;
     z-index: 1000;
 }
 
 .container.active .toggle-container{
     transform: translateX(-100%);
-    border-radius: 0 150px 150px 0;
 }
 
 .toggle{
-    height: 100%;
-    background: linear-gradient(to left, #414833, #333d29);
     color: azure;
     position: relative;
     left: -100%;
@@ -280,6 +286,18 @@ main{
     width: 200%;
     transform: translateX(0);
     transition: all 0.7s ease-in-out;
+}
+
+.toggle-left{
+    background-image: url(../design/blob-1.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.toggle-right{
+    background-image: url(../design/blob.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .container.active .toggle{
@@ -306,7 +324,7 @@ main{
 }
 
 .toggle-left{
-    transform: translateX(-200%);
+    transform: translateX(-100%);
 }
 
 .container.active .toggle-left{
@@ -319,5 +337,5 @@ main{
 }
 
 .container.active .toggle-right{
-    transform: translateX(200%);
+    transform: translateX(100%);
 }

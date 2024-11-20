@@ -74,14 +74,15 @@ main{
 }
 
 @keyframes animated{
-  to{background-position-x: 700px;}
+  to {background-position-x: 700px;}
 }
 
 .container{
-    background: azure;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
     position: relative;
+    background: azure;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     overflow: hidden;
     width: 768px;
     max-width: 100%;
@@ -92,6 +93,7 @@ main{
     font-size: 17px;
     line-height: 25px;
     letter-spacing: 0.3px;
+    padding: 8px 2dvw;
     margin: 20px 0;
 }
 
@@ -108,13 +110,13 @@ main{
 
 .container button a{
     font-family: "Candara", sans-serif;
-    background: linear-gradient(to left, #3a5a40, #333d29);
+    background: linear-gradient(to left, #414833, #333d29);
     color: azure;
 }
 
 .container button {
     font-family: "Candara", sans-serif;
-    background: linear-gradient(to left, #3a5a40, #333d29);
+    background: linear-gradient(to left, #414833, #333d29);
     color: azure;
     font-size: 14px;
     padding: 10px 45px;
@@ -160,6 +162,10 @@ main{
     font-size: 13px;
     border-radius: 8px;
     width: 100%;
+}
+
+.container input:focus{
+    border: 1px outset #eee;
 }
 
 
@@ -266,7 +272,7 @@ main{
 
 .toggle{
     height: 100%;
-    background: linear-gradient(to left, #3a5a40, #333d29);
+    background: linear-gradient(to left, #414833, #333d29);
     color: azure;
     position: relative;
     left: -100%;

@@ -1,342 +1,403 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-:root{
-  color-scheme: light dark;
-}
-
-html, body {
-  scroll-behavior: smooth;
-  background: light-dark(#edf2f4, #0b090a);
-  min-height: 100dvh;
-  width: 100%;
-  margin: 0 auto;
-  cursor: url(../design/cursor.png), auto!important;
-}
-
-a, i, input, img, h1, button, figure{
-  cursor: url(../design/thumb.png), auto!important;
-}
-
-::-webkit-scrollbar {
-  width: 13px;
-}
-
-::-webkit-scrollbar-track {
-  border: 10px solid light-dark(#edf2f4, #0b090a);
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: light-dark(#0b090a, #edf2f4);
-  border: 3px solid light-dark(#edf2f4, #0b090a);
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-
-::selection {
-  color: #00b4d8;
-}
-
-main{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  :root{
+    color-scheme: light dark;
+  }
+  
+  html, body {
+    scroll-behavior: smooth;
+    background: light-dark(#edf2f4, #0b090a);
     min-height: 100dvh;
-    min-width: 900px;
     width: 100%;
-}
-
-#mytitle {
-    padding-right: 7px;
-    font-family: "Rukola", sans-serif;
-    font-size: 40pt;
-    background-image: url(../design/circle.gif);
-    background-size: contain;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-#greet {
-    font-family: "Segoe Script", sans-serif;
-    font-size: 23pt;
-    font-weight: bold;
-    background: linear-gradient(to left, #FFF5E1, #D6EFD8, #F5F7F8, #EBF4F6);
-    background-clip: text;
-    color: transparent;
-    animation: animated 20s linear infinite;
-}
-
-@keyframes animated{
-  to {background-position-x: 700px;}
-}
-
-.container{
-    display: flex;
-    position: relative;
-    margin: 70px;
-    background: azure;
+    margin: 0 auto;
+    cursor: url(../design/cursor.png), auto!important;
+  }
+  
+  a, i, input, img, h1, button, figure{
+    cursor: url(../design/thumb.png), auto!important;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 10px solid light-dark(#edf2f4, #0b090a);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: light-dark(#0b090a, #edf2f4);
+    border: 3px solid light-dark(#edf2f4, #0b090a);
     border-radius: 20px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    overflow: hidden;
-    min-height: 480px;
-    width: 768px;
-    max-width: 100%;
-}
-
-.container p{
-    font-size: 17px;
-    line-height: 25px;
-    letter-spacing: 0.3px;
-    padding: 8px 2dvw;
-    margin: 20px 0;
-}
-
-.container span{
-    font-size: 14px;
-}
-
-.container a{
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0 10px;
-}
-
-.container button a{
-    font-family: "Candara", sans-serif;
-    color: azure;
-}
-
-.container button {
-    font-family: "Candara", sans-serif;
-    color: azure;
-    font-size: 14px;
-    padding: 10px 45px;
-    border: 1px outset aliceblue;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: all .5s;
-}
-
-.container button:active {
-  transform: scale(.9);
-}
-
-.container .left{
-    background-image: url(../design/blob.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-.container .right{
-    background-image: url(../design/blob-1.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-.txt::placeholder{
-    font-family: "Candara", sans-serif;
-    font-size: 14px;
-}
-.container button.hidden{
-    background: transparent;
-    border-color: azure;
-}
-
-.container form{
-    background: azure;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    height: 100%;
-}
-
-.container input{
-    background: #eee;
-    border: unset;
-    outline: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    width: 100%;
-}
-
-.container input:focus{
-    border: 1px outset #eee;
-}
-
-
-.form-container{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    transition: all 0.6s ease-in-out;
-}
-
-.sign-in{
-    left: 0;
-    width: 50%;
-    z-index: 2;
-}
-
-.container.active .sign-in{
-    transform: translateX(100%);
-}
-
-.sign-up{
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
-}
-
-.container.active .sign-up{
-    transform: translateX(100%);
-    opacity: 1;
-    z-index: 5;
-    animation: move 0.6s;
-}
-
-@keyframes move{
-    0%, 49.99%{
-        opacity: 0;
-        z-index: 1;
-    }
-    50%, 100%{
-        opacity: 1;
-        z-index: 5;
-    }
-}
-
-.social-icons{
-    margin: 20px 0;
-}
-
-.social-icons i{
-    font-size: 1.3rem;
-}
-
-.social-icons a{
-    border: 1px solid #ccc;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
-    transition: all 450ms;
-}
-.social-icons a:hover{
-   color: azure;
-   transform: translateY(-10px);
-}
-
-.social-icons a:nth-child(1):hover{
-    background:#004e98;
-}
-.social-icons a:nth-child(2):hover{
-    background: #0b090a;
-}
-.social-icons a:nth-child(3):hover{
-    background: #e1306c;
-}
-.social-icons a:last-child:hover{
-    background: #0c1821;
-}
-
-
-.social-icons a:active{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  ::selection {
+    color: #00b4d8;
+  }
+  
+  main{
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+      min-width: 900px;
+      width: 100%;
+  }
+  
+  #mytitle {
+      padding-right: 7px;
+      font-family: "Rukola", sans-serif;
+      font-size: 3.5rem;
+      background-image: url(../design/circle.gif);
+      background-size: contain;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+  }
+  
+  #greet {
+      font-family: "Segoe Script", sans-serif;
+      font-size: 2.3rem;
+      font-weight: 700;
+      background: linear-gradient(to left, #FFF5E1, #D6EFD8, #F5F7F8, #EBF4F6);
+      background-clip: text;
+      color: transparent;
+      animation: animated 20s linear infinite;
+  }
+  
+  @keyframes animated{
+    to {background-position-x: 700px;}
+  }
+  
+  .container{
+      display: flex;
+      position: relative;
+      margin: 70px;
+      background: azure;
+      border-radius: 20px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      overflow: hidden;
+      min-height: 480px;
+      width: 768px;
+      max-width: 100%;
+  }
+  
+  .container p{
+      font-size: 1.1rem;
+      line-height: 35px;
+      letter-spacing: 0.5px;
+      padding: 8px 2dvw;
+      margin: 20px 0;
+  }
+  
+  .container span{
+      font-size: 14px;
+  }
+  
+  .container a{
+      color: #333;
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 15px 0 10px;
+  }
+  
+  .container button a{
+      font-family: "Candara", sans-serif;
+      color: azure;
+  }
+  
+  .container button {
+      font-family: "Candara", sans-serif;
+      color: azure;
+      font-size: 1rem;
+      padding: 10px 45px;
+      border: 1px outset aliceblue;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: all .5s;
+  }
+  
+  .container button:active {
     transform: scale(.9);
-}
+  }
+  
+  .container .left{
+      background-image: url(../design/blob.svg);
+      background-position: center;
+      background-size: cover;
+  }
+  
+  .container .right{
+      background-image: url(../design/blob-1.svg);
+      background-position: center;
+      background-size: cover;
+  }
+  
+  .txt::placeholder{
+      font-family: "Candara", sans-serif;
+      font-size: 14px;
+  }
+  .container button.hidden{
+      background: transparent;
+      border-color: azure;
+  }
+  
+  .container form{
+      background: azure;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+      height: 100%;
+  }
+  
+  .container input{
+      background: #edf2f4;
+      border: unset;
+      outline: none;
+      margin: 8px 0;
+      padding: 10px 15px;
+      font-size: .8rem;
+      border-radius: 8px;
+      width: 100%;
+  }
+  
+  .container input:focus{
+      border: 1px outset #edf2f4;
+  }
+  
+  
+  .form-container{
+      position: absolute;
+      top: 0;
+      height: 100%;
+      transition: all 0.6s ease-in-out;
+  }
 
-.toggle-container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 0.6s ease-in-out;
-    z-index: 1000;
-}
+  form span{
+    color: #0b090a;
+    margin-top: 20px;
+  }
 
-.container.active .toggle-container{
-    transform: translateX(-100%);
-}
-
-.toggle{
-    color: azure;
-    position: relative;
-    left: -100%;
-    height: 100%;
-    width: 200%;
-    transform: translateX(0);
-    transition: all 0.7s ease-in-out;
-}
-
-.toggle-left{
-    background-image: url(../design/blob-1.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-.toggle-right{
-    background-image: url(../design/blob.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-.container.active .toggle{
-    transform: translateX(50%);
-}
-
-.toggle-panel{
-    position: absolute;
-    width: 50%;
-    height: 100%;
+  form .me{
     display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: 100%;
+  }
+
+  form .me a{
+    font-size: .84rem;
+  }
+
+  #check{
+    accent-color: #333d29;
+  }
+
+  form .me input{
+    margin-right: 2px;
+    margin-top: 15px;
+  }
+
+  form .me a{
+    display: flex;
+    position: relative;
+   }
+
+   form .me .rep{
+    display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 0 30px;
-    text-align: center;
-    top: 0;
-    transform: translateX(0);
-    transition: all 0.6s ease-in-out;
-}
+    height: fit-content;
+   }
 
-.toggle p{
-  font-family: "Candara", sans-serif;
-}
+   form .me .rep .ick{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    height: fit-content;
+   }
 
-.toggle-left{
-    transform: translateX(-100%);
-}
+   form .me .well{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: right;
+    height: fit-content;
+   }
 
-.container.active .toggle-left{
-    transform: translateX(0);
-}
-
-.toggle-right{
-    right: 0;
-    transform: translateX(0);
-}
-
-.container.active .toggle-right{
-    transform: translateX(100%);
-}
+  form .forget:hover{
+    font-weight: 500;
+  }
+  
+  .sign-in{
+      left: 0;
+      width: 50%;
+      z-index: 2;
+  }
+  
+  .container.active .sign-in{
+      transform: translateX(100%);
+  }
+  
+  .sign-up{
+      left: 0;
+      width: 50%;
+      opacity: 0;
+      z-index: 1;
+  }
+  
+  .container.active .sign-up{
+      transform: translateX(100%);
+      opacity: 1;
+      z-index: 5;
+      animation: move 0.6s;
+  }
+  
+  @keyframes move{
+      0%, 49.99%{
+          opacity: 0;
+          z-index: 1;
+      }
+      50%, 100%{
+          opacity: 1;
+          z-index: 5;
+      }
+  }
+  
+  .social-icons{
+      margin: 20px 0;
+  }
+  
+  .social-icons i{
+      font-size: 1.2rem;
+  }
+  
+  .social-icons a{
+      border: 1px solid #ccc;
+      border-radius: 20%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 3px;
+      padding: 10px;
+      width: 35px;
+      height: 35px;
+      transition: all 450ms;
+  }
+  .social-icons a:hover{
+     color: azure;
+     transform: translateY(-10px);
+  }
+  
+  .social-icons a:nth-child(1):hover{
+      background:#004e98;
+  }
+  .social-icons a:nth-child(2):hover{
+      background: #0b090a;
+  }
+  .social-icons a:nth-child(3):hover{
+      background: #e1306c;
+  }
+  .social-icons a:last-child:hover{
+      background: #0c1821;
+  }
+  
+  
+  .social-icons a:active{
+      transform: scale(.9);
+  }
+  
+  .toggle-container{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      transition: all 0.6s ease-in-out;
+      z-index: 1000;
+  }
+  
+  .container.active .toggle-container{
+      transform: translateX(-100%);
+  }
+  
+  .toggle{
+      color: azure;
+      position: relative;
+      left: -100%;
+      height: 100%;
+      width: 200%;
+      transform: translateX(0);
+      transition: all 0.7s ease-in-out;
+  }
+  
+  .toggle-left{
+      background-image: url(../design/blob-1.svg);
+      background-position: center;
+      background-size: cover;
+  }
+  
+  .toggle-right{
+      background-image: url(../design/blob.svg);
+      background-position: center;
+      background-size: cover;
+  }
+  
+  .container.active .toggle{
+      transform: translateX(50%);
+  }
+  
+  .toggle-panel{
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 30px;
+      text-align: center;
+      top: 0;
+      transform: translateX(0);
+      transition: all 0.6s ease-in-out;
+  }
+  
+  .toggle p{
+    font-family: "Candara", sans-serif;
+  }
+  
+  .toggle-left{
+      transform: translateX(-100%);
+  }
+  
+  .container.active .toggle-left{
+      transform: translateX(0);
+  }
+  
+  .toggle-right{
+      right: 0;
+      transform: translateX(0);
+  }
+  
+  .container.active .toggle-right{
+      transform: translateX(100%);
+  }

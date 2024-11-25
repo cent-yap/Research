@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" type="x-icon" href="#">
+    <link rel="shortcut icon" type="x-icon" href="K">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KeePect</title>
     <link rel="stylesheet" href="theme/style.css">
@@ -37,17 +37,13 @@
       <ul class="navigation">
         <li onclick=hideSidebar()><a href="#" class="option"><i class="fa-solid fa-xmark"></i></a></li>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="#">Explore</a></li>
         <li><a href="SIGN IN.html">Sign In</a></li>
       </ul>
 
       <ul class="shown">
-        <li class="hide"><a href="index.html" class="use active"><i class="bi bi-house-door-fill"></i> Home</a></li>
-        <li class="hide"><a href="#" class="use"><i class="bi bi-hand-index-thumb-fill"></i> Services</a></li>
-        <li class="hide"><a href="#" class="use"><i class="bi bi-lightbulb-fill"></i> Projects</a></li>
-        <li class="hide"><a href="#" class="use"><i class="bi bi-info-circle-fill"></i> Resume</a></li>
+        <li class="hide"><a href="index.html" class="active"><i class="bi bi-house-door-fill"></i> Home</a></li>
+        <li class="hide"><a href="#" class="use"><i class="bi bi-globe-central-south-asia"></i> Explore <i class="bi bi-chevron-down drop-down"></i> </a></li>
         <li class="hide"><a href="SIGN IN.html" class="btn"><button type="submit">Sign In</button></a></li>
         <li onclick=showSidebar()><a href="#" class="menu-button"><i class="fa-solid fa-bars-progress"></i></a></li>
       </ul>
@@ -63,14 +59,14 @@
   <div class="top">
 
     <div class="here">
-      <img src="design/keepect.png">
+     <h1 data-content="KeePect">KeePect</h1>
+     <p id="modal" popover> Keep it perfect. </p>
     </div>
 
-  <button type="submit" class="btn"> Download App </button>
+  <button type="submit" class="btn" popovertarget="modal"> Download App </button>
 
   </div>
 
-  
 </section>
 
 

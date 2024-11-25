@@ -41,17 +41,17 @@ a, i, input, img, h1, button, figure{
 }
 
 ::selection {
-  color: #00b4d8;
+  color: #414833;
 }
 
 
 .banner{
-  background: aliceblue;
   display: flex;
   position: fixed;
-  top: 0;
-  width: 100%;
+  background: azure;
   height: 80px;
+  min-width: 800px;
+  width: 100%;
 }
 .banner{
   position: relative;
@@ -76,8 +76,10 @@ a{
 nav
 {
   display: flex;
-  align-items: center;
   position: relative;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
   padding: 15px 30px;
   width: 100%;
   z-index: 1000;
@@ -86,9 +88,9 @@ nav
 .logo{
   display: flex;
   position: relative;
-  align-items: center;
   justify-content: left;
-  width: 100%;
+  align-items: center;
+  height: fit-content;
 }
 
 .logo img{
@@ -108,15 +110,15 @@ nav ul{
 .navigation a{
   padding: 0 30px;
   display: flex;
-  color:black;
+  color: #0b090a;
   align-items: center;
   height: 100%;
   width: 100%;
 }
 
 .navigation a:hover{
-  background-color: #14213d;
-  color: white;
+  background: #14213d;
+  color: azure;
 }
 
 .navigation{
@@ -150,7 +152,7 @@ nav ul{
   font-size: 1.7rem;
 }
 .shown{
-  color: black;
+  color: #0b090a;
   gap: 10px;
 }
 .menu-button i{
@@ -160,21 +162,27 @@ nav ul{
 .shown li a 
 {
 text-decoration: none;
-padding: 6px 15px;
-color: black;
-border-radius: 20px;
+margin: 0px 10px;
+padding: 6px 10px;
+border-radius: 10px;
+color: #0b090a;
 }
-.use:hover,
 nav li a.active
 {
-background: #14213d;
-color: #fff;
+color: #582f0e;
+border-bottom: 2px inset #333d29;
+transition: all 0.1s;
 }
 
 .use i{
-  color: #ffd100;
+  color: #333d29;
   font-size: 1rem;
 }
+
+.use .drop-down, .use .drop-up{
+  font-size: .7rem;
+}
+
 
 .menu-button{
   display: none;
@@ -185,98 +193,52 @@ color: #fff;
   position: relative;
   padding: 6px 15px;
   border-radius: 20px;
-  color: black;
   font-size: 14px;
   font-weight: 500;
+  color: azure;
   outline: none;
   cursor: pointer;
-  border: none;
-  background-color: #ffd100;
-  transition: transform 0.2 ease;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  border: unset;
+  background: #414833;
+  transition: transform 0.3 ease-in-out;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .shown li a button:hover{
-  color: #660708;
+  background: #333d29;
 }
 
 .btn button:active{
   transform: scale(0.96);
   }
-  .btn button::before,
-  .btn button::after{
-      content: "";
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 100%;
-      width: 150%;
-      background-repeat: no-repeat;
-      z-index: -1;
-  }
-  .btn button.animate::before{
-      top:-70%;
-      background-image: radial-gradient(circle, #ffd100 20%, transparent 20%),
-      radial-gradient(circle, transparent 20%, #660708 20%, transparent 30%),
-      radial-gradient(circle, #ffd100 20%, transparent 20%),
-      radial-gradient(circle, transparent 10%, #660708 15%, transparent 20%),
-      radial-gradient(circle, #ffd100 20%, transparent 20%),
-      radial-gradient(circle, #660708 20%, transparent 20%),
-      radial-gradient(circle, #ffd100 20%, transparent 20%),
-      radial-gradient(circle, #660708 20%, transparent 20%);
-      background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 
-      10% 10%, 18% 18%;
-      background-position: 5% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 
-      55% 90%, 70% 90%;
-      animation: topBubbles 0.6s ease-in-out forwards;
-  }
-  @keyframes topBubbles{
-      50%{
-          background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
-          50% 50%, 65% 20%, 90% 30%;
-      }
-      100%{
-          background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
-          50% 40%, 65% 10%, 90% 20%;
-          background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-      }
-  }
-  .btn button.animate::after{
-      bottom: -70%;
-      background-image: radial-gradient(circle, #ffd100 20%, transparent 20%),
-      radial-gradient(circle, transparent 10%, #660708 15%, transparent 20%),
-      radial-gradient(circle, #ffd100 20%, transparent 20%),
-      radial-gradient(circle, #660708 20%, transparent 20%),
-      radial-gradient(circle, #ffd100 20%, transparent 20%),
-      radial-gradient(circle, #660708 20%, transparent 20%),
-      radial-gradient(circle, #ffd100 20%, transparent 20%);
-      background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
-      background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%; 
-      animation: bottomBubbles 0.6s ease-in-out forwards;
-  }
-  @keyframes bottomBubbles{
-      50%{
-          background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
-          105% 0%;
-      }
-      100%{
-          background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
-          110% 10%;
-          background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-      }
-  }
 
 .bg{
-  display: flex;
+  display: none;
   position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  height: 100dvh; 
+  min-width: 800px;
   width: 100%;
 }
+
+    .bg .here p {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: unset;
+        outline: unset;
+        color: #0b090a;
+        background: azure;
+        border-radius: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        padding: 6px 12px;
+        z-index: 1;
+    }
+   
 
 .bg .top{
   display: flex;
@@ -286,27 +248,45 @@ color: #fff;
   justify-content: center;
   gap: 15px;
   padding: 15px;
-  
   height: fit-content; 
   width: 100%;
 }
 
-.bg .top h1{
+.bg .top .here{
+  display: flex;
   position: relative;
-  font-family: "Candara", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.bg .top .here h1{
+  position: relative;
   font-size: 4rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: light-dark(#0b090a, #edf2f4);
+  letter-spacing: 5px;
+}
+
+.bg .top .here h1::after{
+  position: absolute;
+  inset: 0 0 0 0;
+  content: attr(data-content);
+  z-index: 2;
+  letter-spacing: 5px;
+  -webkit-text-stroke: .5px light-dark(#0b090a, #edf2f4);
+  color: transparent;
 }
 
 .bg .top .btn{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   border: unset;
   outline: none;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border-radius: 15px;
+  border-radius: 10px;
+  color: azure;
+  background: #414833;
   padding: 10px;
   transition: all 450ms;
 }
@@ -314,7 +294,8 @@ color: #fff;
 
 .bg .top .btn:hover{
   color:#0b090a;
-  background: aliceblue;
+  font-weight: 600;
+  background: azure;
 }
 
 .bg .top .btn:active{

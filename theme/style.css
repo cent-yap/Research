@@ -668,7 +668,11 @@ li{
 }
 
 .tel .jk .box-2 h3{
+  color: #022b3a;
   font-weight: 620;
+}
+.tel .jk .box-2 small{
+  color: #022b3a;
 }
 
 .sep .tel .kj{
@@ -736,11 +740,16 @@ li{
 }
 
 .tel .kj .box-2 h3{
+  color: #022b3a;
   font-weight: 620;
 }
+.tel .kj .box-2 small{
+  color: #022b3a;
+}
+
 
 .dg{
-  display: flex;
+  display: none;
   position: relative;
   align-items: center;
   justify-content: center;

@@ -480,6 +480,15 @@ li{
   padding-bottom: 10px;
 }
 
+.air .keen{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 .air .above {
   display: flex;
   position: relative;
@@ -502,6 +511,11 @@ li{
   align-items: center;
   justify-content: left;
   width: 100%;
+}
+
+.air .top h2{
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 

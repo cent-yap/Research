@@ -312,7 +312,7 @@ transition: all 0.1s;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, #edf2f4, #333d29);
+  background: linear-gradient(to bottom, light-dark(#edf2f4, #0b090a), #333d29);
   gap: 20px;
   padding: 0 50px;
   padding-top: 50px;
@@ -328,9 +328,10 @@ transition: all 0.1s;
   justify-content: center;
   padding: 30px;
   border-radius: 20px 20px 0px 0px;
-  background: linear-gradient(to bottom, #edf2f4, #333d29);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background: linear-gradient(to bottom, light-dark(#edf2f4, #0b090a), #333d29);
+  box-shadow: light-dark(#b1a7a6, #343a40) 0px 4px 0px -2px, light-dark(#b1a7a6, #343a40) 0px 0px 0px 1px;
   height: fit-content;
+  overflow: hidden;
   max-width: 1600px;
   width: 100%;
 }
@@ -501,7 +502,6 @@ li{
 
 .air .above i{
   color: #022b3a;
-  padding-top: 5px;
   font-size: 1rem;
 }
 
@@ -610,7 +610,6 @@ li{
   justify-content: center;
   background: #0b090a;
   color: azure;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   font-size: 1rem;
   font-weight: 500;
   border: unset;
@@ -620,6 +619,7 @@ li{
   margin-right: 50px;
   width: 40%;
   transition: all 450ms;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .let .hop button:active{
@@ -784,33 +784,121 @@ li{
 
 
 .dg{
-  display: none;
+  display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 50px;
-  min-height: 30dvh;
+  min-height: 50dvh;
   min-width: 1310px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   width: 100%;
 }
 
 .dg h1{
-  font-size: 2.5rem;
-  font-weight: 600;
-  padding: 20px;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 10px;
 }
 
-.dg img{
-  aspect-ratio: 9/9;
-  height: 200px;
-  width: 450px;
+.dg .cheers{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-block: 30px;
+  min-height: fit-content;
+  width: 100%;
 }
-.dg h2{
-  font-size: 2rem;
+
+.cheers .cmd{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  padding-inline: 20px;
+  padding-block: 30px;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+
+.cmd h1{
+   font-size: 2rem;
+   font-weight: 600;
+   color: light-dark(#0b090a, #edf2f4);
+}
+.cmd p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: light-dark(#0b090a, #edf2f4);
+  padding-bottom: 20px;
+}
+.cmd button{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 12px;
+  outline: unset;
+  border: unset;
+  background: light-dark(#0b090a, #edf2f4);
+  color: light-dark(#edf2f4, #0b090a);
+  transition: all 450ms;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 100%;
+}
+
+.cmd button:active{
+  transform: scale(.9);
+}
+
+.cmd button a{
+  font-size: 1.2rem;
   font-weight: 500;
-  padding: 20px;
+}
+
+.cheers .dmd{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+  padding-block: 30px;
+  min-height: 500px;
+  width: 100%;
+}
+
+.dmd .lom{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 400px;
+  border-radius: 12px;
+  outline: 1px inset #ccc;
+  width: 100%;
+}
+
+.dmd .lom:hover{
+  outline: 2px outset #ccc;
+}
+
+.lom h1{
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.lom .vate{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1600px){

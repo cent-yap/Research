@@ -220,7 +220,7 @@ transition: all 0.1s;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  min-width: 800px;
+  min-width: 1310px;
   width: 100%;
 }
 
@@ -312,7 +312,7 @@ transition: all 0.1s;
   padding: 0 50px;
   padding-top: 50px;
   min-height: 60dvh;
-  min-width: 800px;
+  min-width: 1310px;
   width: 100%;
 }
 
@@ -352,13 +352,13 @@ transition: all 0.1s;
 
 .ego{
  align-content: left;
- padding: 3px 10px;
+ padding: 0px 10px;
  height: fit-content;
 }
 
-.ego h1{
-  font-size: 1.7rem;
-  color: #0b090a;
+.ego img{
+  height: 40px;
+  width: 150px;
 }
 
 .so{

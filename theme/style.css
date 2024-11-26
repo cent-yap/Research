@@ -916,35 +916,47 @@ li{
   position: relative;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  flex-direction: column;
   border-radius: 6px;
   padding-bottom: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   height: 150px;
   width: 170px;
   transition: all 450ms;
   overflow: hidden;
 }
 
+.vate .boxy img{
+ object-fit: contain;
+ height: 75px;
+ width: 100px;
+}
+
+.vate .boxy small{
+  padding-top: 10px;
+}
+
 .vate .boxy:hover{
+  color: #14213d;
   transform: scale(1.1);
 }
 
-.vate .boxy:nth-child(1){
-  background: #db7f8e;
+.vate .boxy:hover:nth-child(1){
+  background: #eafffd;
 }
-.vate .boxy:nth-child(2){
-  background: #e9e3e6;
+.vate .boxy:hover:nth-child(2){
+  background: #f8f4e3;
 }
-.vate .boxy:nth-child(3){
+.vate .boxy:hover:nth-child(3){
   background: #ffebe7;
 }
-.vate .boxy:nth-child(4){
-  background: #b0bbbf;
+.vate .boxy:hover:nth-child(4){
+  background: #f4f4f9;
 }
-.vate .boxy:nth-child(5){
+.vate .boxy:hover:nth-child(5){
   background: #dcd6f7;
 }
-.vate .boxy:nth-child(6){
+.vate .boxy:hover:nth-child(6){
   background: #f5f9e9;
 }
 

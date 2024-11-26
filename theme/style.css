@@ -820,7 +820,12 @@ li{
   }
 }
 
+@media screen and (max-width: 1450px){
 
+  .tel .jk .box, .tel .kj .box{
+    width: 175px;
+  }
+}
 
 @media screen and (max-width: 950px){
   .hide{

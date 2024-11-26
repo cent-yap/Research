@@ -316,7 +316,7 @@ transition: all 0.1s;
   justify-content: center;
   padding: 30px;
   border-radius: 20px 20px 0px 0px;
-  background: linear-gradient(to bottom, #ccc, #1b4332);
+  background: linear-gradient(to bottom, #edf2f4, #333d29);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   overflow: hidden!important;
   height: fit-content;

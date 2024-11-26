@@ -197,7 +197,7 @@ transition: all 0.1s;
 
 
 .menu-button{
-  display: none;
+  display: none!important;
   cursor: pointer;
 }
 
@@ -212,7 +212,7 @@ transition: all 0.1s;
   cursor: pointer;
   border: unset;
   background: #414833;
-  transition: transform 0.3 ease-in-out;
+  transition: all .2s;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -330,8 +330,8 @@ transition: all 0.1s;
   border-radius: 20px 20px 0px 0px;
   background: linear-gradient(to bottom, #edf2f4, #333d29);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  overflow: hidden!important;
   height: fit-content;
+  max-width: 1600px;
   width: 100%;
 }
 
@@ -632,7 +632,6 @@ li{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   height: 450px;
   width: 100%;
 }
@@ -643,6 +642,7 @@ li{
   align-items: center;
   justify-content: center;
   padding: 10px;
+  padding-inline: 50px;
   gap: 20px;
   height: 140px;
   width: 100%;
@@ -657,7 +657,7 @@ li{
   border-radius: 12px;
   overflow: hidden;
   height: 120px;
-  width: 175px;
+  width: 245px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   transition: all 450ms;
 }
@@ -715,6 +715,7 @@ li{
   align-items: center;
   justify-content: center;
   padding: 10px;
+  padding-inline: 50px;
   gap: 20px;
   height: 140px;
   width: 100%;
@@ -729,7 +730,7 @@ li{
   border-radius: 12px;
   overflow: hidden;
   height: 120px;
-  width: 175px;
+  width: 245px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   transition: all 450ms;
 }
@@ -812,8 +813,16 @@ li{
   padding: 20px;
 }
 
+@media screen and (max-width: 1600px){
 
-@media(max-width: 950px){
+  .tel .jk .box, .tel .kj .box{
+    width: 210px;
+  }
+}
+
+
+
+@media screen and (max-width: 950px){
   .hide{
     display: none;
   }

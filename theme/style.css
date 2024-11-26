@@ -44,15 +44,27 @@ a, i, input, img, h1, button, figure{
   color: brown;
 }
 
-
 .banner{
   display: flex;
-  position: fixed;
+  position: sticky;
   background: azure;
   height: 80px;
   min-width: 1310px;
   width: 100%;
+  z-index: 100;
+  animation: slideUP 2s ease forwards;
 }
+
+@keyframes slideUP {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+
+
+.banner .scrolled{
+  opacity: 0.5;
+}
+
 .banner{
   position: relative;
   box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0.1) insert;
@@ -444,7 +456,6 @@ li{
 
 .air h2{
   padding: 0px 20px;
-  padding-top: 10px;
   color: #0b090a;
 }
 
@@ -469,6 +480,22 @@ li{
   padding-bottom: 10px;
 }
 
+.air .above {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: right;
+  padding: 0 15px;
+  gap: 10px;
+  width: 100%;
+}
+
+.air .above i{
+  color: #022b3a;
+  padding-top: 5px;
+  font-size: 1rem;
+}
+
 .air .top {
   display: flex;
   position: relative;
@@ -477,13 +504,6 @@ li{
   width: 100%;
 }
 
-.top h2{
-  font-size: 1.7rem;
-}
-
-.top i{
-  font-size: 1.1rem;
-}
 
 .sep{
   display: flex;

@@ -26,10 +26,8 @@
   <body>
 
 
-<section class="banner">
-
+<section class="banner active">
     <nav>
-
       <div class="logo">
         <img src="design/KeePect.png" alt="KeePect">
       </div>
@@ -47,9 +45,7 @@
         <li class="hide"><a href="SIGN IN.html" class="btn"><button type="submit">Sign In</button></a></li>
         <li onclick=showSidebar()><a href="#" class="menu-button"><i class="fa-solid fa-bars-progress"></i></a></li>
       </ul>
-
     </nav>
-
 </section>
 
 <section class="bg">
@@ -91,8 +87,12 @@
       </div>
 
       <div class="air">
+        <div class="above">
+        <i class="bi bi-search"></i> 
+        <i class="bi bi-journal-arrow-down"></i>
+        </div>
         <div class="top">
-        <h2><i class="bi bi-search"></i> Library</h2>
+        <h2>Library</h2>
         </div>
         <div class="lib">
           <li><a><i class="bi bi-arrow-up-right-circle"></i>Psychology</a></li>
@@ -222,15 +222,17 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
+<script>
+  document.addEventListener('scroll', () => {
+     const header = document.querySelector('banner');
+ 
+     if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+     } else {
+        header.classList.remove('scrolled');
+     }
+  });
+</script>
 
   </body>
 

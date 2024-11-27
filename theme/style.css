@@ -579,6 +579,7 @@ li{
   justify-content: left;
   outline: 1px inset #b1a7a6;
   color: light-dark(#0b090a, #edf2f4);
+  background: azure;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   border-radius: 6px;
   margin-right: 5px;
@@ -597,7 +598,7 @@ li{
   z-index: 10;
 }
 
-.rol .kiwi{
+.rol i{
   color: #0b090a
 }
 

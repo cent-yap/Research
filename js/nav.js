@@ -10,7 +10,7 @@ function hideSidebar() {
 
 function checkScreenSize() {
   const navigation = document.querySelector('.navigation');
-  if (window.innerWidth > 950) { // Adjust the width as needed
+  if (window.innerWidth > 800) { // Adjust the width as needed
       navigation.style.display = 'none';
   } 
 }

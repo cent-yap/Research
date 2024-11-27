@@ -138,7 +138,7 @@ nav ul{
   top: 0; 
   right: 0;
   height: 100dvh;
-  width: 250px;
+  width: 300px;
   backdrop-filter: blur(10px);
   filter:contrast(1.5);
   filter:saturate(1);

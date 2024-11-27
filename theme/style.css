@@ -344,7 +344,7 @@ transition: all 0.1s;
   padding: 30px;
   border-radius: 20px 20px 0px 0px;
   background: linear-gradient(to bottom, light-dark(#edf2f4, #0b090a), #333d29);
-  box-shadow: light-dark(#b1a7a6, #343a40) 0px 0px 0px -2px, light-dark(#b1a7a6, #343a40) 0px 0px 0px 1px;
+  box-shadow: #b1a7a6 0px 0px 0px -2px, #b1a7a6 0px 0px 0px 1px;
   height: fit-content;
   overflow: hidden;
   max-width: 1600px;
@@ -998,7 +998,7 @@ li{
   justify-content: center;
   flex-direction: column;
   border-radius: 6px;
-  box-shadow: light-dark(#b1a7a6, #343a40) 0px 2px 0px -2px, light-dark(#b1a7a6, #343a40) 0px 0px 0px 1px;
+  box-shadow: #b1a7a6 0px 2px 0px -2px, #b1a7a6 0px 0px 0px 1px;
   height: 130px;
   width: 150px;
   transition: all 450ms;
@@ -1011,7 +1011,6 @@ li{
  width: 100px;
  filter: saturate(1.2);
  filter: contrast(1.2);
- filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
 }
 
 .vate .boxy small{
@@ -1021,6 +1020,7 @@ li{
 .vate .boxy:hover{
   color: #14213d;
   transform: scale(1.1);
+  box-shadow: unset;
 }
 .vate .boxy:active{
   transform: scale(.9);
@@ -1677,7 +1677,7 @@ footer .rain-2{
 
 .foo h1{
   color: azure;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 

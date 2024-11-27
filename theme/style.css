@@ -940,6 +940,9 @@ li{
   color: #14213d;
   transform: scale(1.1);
 }
+.vate .boxy:active{
+  transform: scale(.9);
+}
 
 .vate .boxy:hover:nth-child(1){
   background: #eafffd;

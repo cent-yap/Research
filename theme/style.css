@@ -897,6 +897,7 @@ li{
   flex-direction: column;
   min-height: 400px;
   border-radius: 12px;
+  padding: 10px;
   outline: 1px inset #ccc;
   background: light-dark(#edf2f4, #0b090a);
   overflow: hidden;

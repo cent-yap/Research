@@ -142,7 +142,7 @@ nav ul{
   backdrop-filter: blur(10px);
   filter:contrast(1.5);
   filter:saturate(1);
-  background: light-dark(transparent, #edf2f4);
+  background: #edf2f4;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
   display: none;
@@ -163,7 +163,13 @@ nav ul{
 
 .option i{
   font-size: 1.7rem;
+  padding: 10px 0;
 }
+
+.navigation .option i:hover{
+  transform: rotate(360deg);
+}
+
 .shown{
   color: #0b090a;
   gap: 10px;

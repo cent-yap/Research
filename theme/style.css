@@ -1374,7 +1374,7 @@ li{
 }
 
 .inline .fol .org p{
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 450;
   padding: 5px 10px;
 }
@@ -1447,7 +1447,7 @@ li{
 }
 
 .inline .bac .org p{
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 450;
   padding: 5px 10px;
 }

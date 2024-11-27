@@ -178,6 +178,7 @@ nav ul{
 }
 .menu-button:hover{
   transform: rotate(-0.100turn);
+  transition: all 250ms;
 }
 
 .shown li a 
@@ -1374,7 +1375,7 @@ li{
 }
 
 .inline .fol .org p{
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 450;
   padding: 5px 10px;
 }
@@ -1447,7 +1448,7 @@ li{
 }
 
 .inline .bac .org p{
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 450;
   padding: 5px 10px;
 }

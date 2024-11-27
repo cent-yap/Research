@@ -602,6 +602,14 @@ li{
   color: #0b090a
 }
 
+.rol .kiwi{
+  padding-right: 5px;
+}
+
+.rol .circ:hover{
+  color: crimson;
+}
+
 .rol input:focus{
   outline: 2px outset #b1a7a6;
 }
@@ -1324,11 +1332,167 @@ li{
   justify-content: center;
   flex-direction: column;
   border-radius: 6px;
-  padding-bottom: 10px;
-  height: 330px;
+  height: fit-content;
   width: 500px;
+  outline: 1px inset #b1a7a6;
   transition: all 450ms;
   overflow: hidden;
+}
+
+.vate .box .inline{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+
+.box .inline .fol{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  height: 150px;
+  width: 100%;
+}
+
+.box .inline .fol .org{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  flex-direction: column;
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+}
+
+.inline .fol .org h1{
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.inline .fol .org p{
+  font-size: 1rem;
+  font-weight: 450;
+  padding: 5px 10px;
+}
+
+.inline .fol .org button{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border-radius: 12px;
+  outline: unset;
+  border: unset;
+  font-size: 1rem;
+  font-weight: 500;
+  background: light-dark(#0b090a, #edf2f4);
+  color: light-dark(#edf2f4, #0b090a);
+  transition: all 450ms;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 100%;
+}
+
+.inline .fol .org button i{
+  padding-left: 5px;
+  color: #0353a4;
+}
+
+.inline .fol .org button:active{
+  transform: scale(.9);
+}
+
+.box .inline .fol .rest{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+}
+
+.fol .rest img{
+  object-fit: contain;
+  height: 130px;
+  width: 200px;
+  filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
+}
+
+.box .inline .bac{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  height: 150px;
+  width: 100%;
+}
+
+.box .inline .bac .org{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  flex-direction: column;
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+}
+
+.inline .bac .org h1{
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.inline .bac .org p{
+  font-size: 1rem;
+  font-weight: 450;
+  padding: 5px 10px;
+}
+
+.inline .bac .org button{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border-radius: 12px;
+  outline: unset;
+  border: unset;
+  background: light-dark(#0b090a, #edf2f4);
+  color: light-dark(#edf2f4, #0b090a);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 450ms;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 100%;
+}
+
+.inline .bac .org button i{
+  padding-left: 5px;
+  color: crimson;
+}
+
+.inline .bac .org button:active{
+  transform: scale(.9);
+}
+
+.box .inline .bac .rest{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+}
+
+.bac .rest img{
+  object-fit: contain;
+  height: 130px;
+  width: 200px;
+  filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
 }
 
 @media screen and (max-width: 1600px){

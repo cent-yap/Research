@@ -1570,7 +1570,7 @@ footer .rain{
   justify-content: left;
   flex-direction: column;
   padding: 20px;
-  height: 350px;
+  height: 300px;
   width: 100%;
 }
 
@@ -1622,7 +1622,7 @@ footer .rain-1{
   justify-content: left;
   flex-direction: column;
   padding: 20px;
-  height: 350px;
+  height: 300px;
   width: 45%;
 }
 
@@ -1651,7 +1651,7 @@ footer .rain-2{
   justify-content: left;
   flex-direction: column;
   padding: 20px;
-  height: 350px;
+  height: 300px;
   width: 45%;
 }
 

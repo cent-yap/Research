@@ -1501,6 +1501,50 @@ li{
   filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
 }
 
+.gg{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-inline: 50px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  min-height: 50dvh;
+  min-width: 1310px;
+  width: 100%;
+}
+
+.gg h1{
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.gg button{
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: unset;
+  outline: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 50px;
+  color: azure;
+  background: #414833;
+  padding: 12px 20px;
+  transition: all 450ms;
+}
+
+
+.gg button:hover{
+  color:light-dark(#edf2f4, #0b090a);
+  font-weight: 600;
+  background: light-dark(#0b090a, #edf2f4);
+}
+
+.gg button:active{
+ transform: scale(.9);
+}
+
 @media screen and (max-width: 1600px){
 
   .tel .jk .box, .tel .kj .box{

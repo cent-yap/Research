@@ -1590,6 +1590,7 @@ footer .rain .here{
 .rain .here .kill{
   display: flex;
   position: relative;
+  align-items: flex-start;
   justify-content: left;
   flex-direction: column;
   padding: 10px 0px;
@@ -1603,6 +1604,7 @@ footer .rain .here{
 .rain .here .kill-1{
   display: flex;
   position: relative;
+  align-items: flex-start;
   justify-content: left;
   padding: 10px 0px;
   flex-direction: column;
@@ -1627,6 +1629,7 @@ footer .rain-1{
 .rain-1 .here{
   display: flex;
   position: relative;
+  align-items: flex-start;
   justify-content: left;
   flex-direction: column;
   padding: 10px 0px;
@@ -1655,6 +1658,7 @@ footer .rain-2{
 .rain-2 .here{
   display: flex;
   position: relative;
+  align-items: flex-start;
   justify-content: left;
   flex-direction: column;
   padding: 10px 0px;

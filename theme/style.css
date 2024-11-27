@@ -597,6 +597,10 @@ li{
   z-index: 10;
 }
 
+.rol .kiwi{
+  color: #0b090a
+}
+
 .rol input:focus{
   outline: 2px outset #b1a7a6;
 }

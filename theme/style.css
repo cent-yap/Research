@@ -184,11 +184,15 @@ nav ul{
 .shown li a 
 {
 text-decoration: none;
-margin: 0px 10px;
 padding: 6px 10px;
 border-radius: 10px;
 color: #0b090a;
 }
+
+nav li .use:hover{
+  color: #2d6a4f;
+}
+
 nav li a.active
 {
 color: #582f0e;

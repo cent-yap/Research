@@ -157,6 +157,10 @@ nav ul{
   line-height: 60px;
 }
 
+.navigation i{
+  padding-right: 5px;
+}
+
 .option i{
   font-size: 1.7rem;
 }
@@ -1122,6 +1126,144 @@ li{
   filter: saturate(1.2);
   filter: contrast(1.2);
   filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
+}
+
+
+.fg{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-inline: 50px;
+  background-image: url(../design/steps.svg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  min-height: 30dvh;
+  min-width: 1310px;
+  width: 100%;
+}
+
+.fg .cheers{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-block: 30px;
+  min-height: fit-content;
+  width: 100%;
+}
+
+.fg .cheers .cmd{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  padding-inline: 20px;
+  padding-block: 30px;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+
+.fg .cmd h1{
+   font-size: 2rem;
+   font-weight: 600;
+   text-align: left;
+   color: light-dark(#0b090a, #edf2f4);
+}
+.fg .cmd p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: light-dark(#0b090a, #edf2f4);
+  text-wrap: wrap;
+  padding-bottom: 20px;
+}
+.fg .cmd button{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 12px;
+  outline: unset;
+  border: unset;
+  background: light-dark(#0b090a, #edf2f4);
+  color: light-dark(#edf2f4, #0b090a);
+  transition: all 450ms;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 100%;
+}
+
+.fg .cmd button:active{
+  transform: scale(.9);
+}
+
+.fg .cmd button a{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.fg .cheers .dmd{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+  padding-block: 30px;
+  min-height: 500px;
+  width: 100%;
+}
+
+.fg .dmd .lom{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  outline: 1px inset #ccc;
+  background: light-dark(#edf2f4, #0b090a);
+  overflow: hidden;
+  min-height: 400px;
+  width: 100%;
+}
+
+.fg .dmd .lom:hover{
+  outline: 2px outset #ccc;
+}
+
+.fg .lom h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.fg .lom .vate{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 30px;
+  padding-bottom: 30px;
+  height: fit-content;
+  width: 100%;
+}
+
+.fg .lom .vate .box{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  padding-bottom: 10px;
+  height: 330px;
+  width: 500px;
+  transition: all 450ms;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1600px){

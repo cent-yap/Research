@@ -553,6 +553,57 @@ li{
   width: 100%;
 }
 
+.sep .let .rem{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+}
+
+.sep .let .rol{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10px;
+  height: fit-content;
+  width: 100%;
+}
+
+.let .rol input{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: left;
+  outline: 1px inset #b1a7a6;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-radius: 6px;
+  margin-right: 5px;
+  border: unset;
+  outline: unset;
+  padding: 8px 8px 8px 35px;
+  width: 75%;
+}
+
+.rol .sem {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  top: 46%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.rol input:focus{
+  outline: 2px outset #b1a7a6;
+}
+
+.rol input::-ms-reveal {
+  filter: invert(100%);
+}
+
 .sep .let .an{
   display: flex;
   position: relative;
@@ -582,7 +633,7 @@ li{
   align-items: center;
   justify-content: center;
   height: fit-content;
-  padding-block: 20px;
+  padding-block: 10px;
   border-bottom: 1px solid #14213d;
   width: 100%;
 }
@@ -703,7 +754,7 @@ li{
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-end;
   padding: 5px 10px;
   height: 90px;
   background: azure;
@@ -714,9 +765,6 @@ li{
 .tel .jk .box-2 h3{
   color: #022b3a;
   font-weight: 620;
-}
-.tel .jk .box-2 small{
-  color: #022b3a;
 }
 
 .sep .tel .kj{
@@ -776,7 +824,7 @@ li{
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-end;
   padding: 5px 10px;
   height: 90px;
   background: azure;
@@ -788,10 +836,6 @@ li{
   color: #022b3a;
   font-weight: 620;
 }
-.tel .kj .box-2 small{
-  color: #022b3a;
-}
-
 
 .dg{
   display: flex;

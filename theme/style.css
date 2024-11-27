@@ -1379,6 +1379,10 @@ li{
   padding: 5px 10px;
 }
 
+.inline .fol .org h1 i{
+  color: palevioletred;
+}
+
 .inline .fol .org p{
   font-size: .9rem;
   font-weight: 450;
@@ -1450,6 +1454,10 @@ li{
   font-size: 1.3rem;
   font-weight: 600;
   padding: 5px 10px;
+}
+
+.inline .bac .org h1 i{
+  color: #0353a4;
 }
 
 .inline .bac .org p{

@@ -47,38 +47,25 @@ a, i, input, img, h1, button, figure{
 .banner{
   display: flex;
   position: sticky;
+  position: -webkit-sticky; /* Safari */
   background: azure;
+  top: 0;
   height: 80px;
+  margin: 0px auto;
   min-width: 1310px;
   width: 100%;
   z-index: 100;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   animation: slideUP 2s ease forwards;
+}
+
+.banner .scrolled { 
+  opacity: 0.9; background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */ 
 }
 
 @keyframes slideUP {
   0% { transform: translateY(-100%); }
   100% { transform: translateY(0); }
-}
-
-
-.banner .scrolled{
-  opacity: 0.5;
-}
-
-.banner{
-  position: relative;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0.1) insert;
-}
-.banner:before,
-.banner:after{
-  content:'';
-  position: absolute;
-  z-index: 1;
-  box-shadow: 0 0 1px black;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
 }
 
 a{

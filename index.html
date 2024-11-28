@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script type="text/script"></script>
     <script src="js/nav.js" defer></script>
+    <script src="js/steal.js" defer></script>
   </head>
+  
+<body>
 
-  <body>
-
-
-<section class="banner active">
+<header class="banner active">
     <nav>
       <div class="logo">
         <img src="design/KeePect.png" alt="KeePect">
@@ -48,7 +48,7 @@
         <li onclick=showSidebar()><a class="menu-button"><i class="bi bi-bar-chart-steps"></i></a></li>
       </ul>
     </nav>
-</section>
+</header>
 
 <section class="bg">
   <div class="top">
@@ -391,7 +391,7 @@
 
 <script>
   document.addEventListener('scroll', () => {
-     const header = document.querySelector('banner');
+     const header = document.querySelector('header');
  
      if (window.scrollY > 0) {
         header.classList.add('scrolled');

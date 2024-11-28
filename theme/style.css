@@ -874,8 +874,7 @@ li{
   filter: contrast(1.2);
   filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  padding-top: 50px;
-  padding-inline: 50px;
+  padding: 50px;
   min-height: fit-content;
   min-width: 1310px;
   width: 100%;
@@ -892,8 +891,7 @@ li{
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-block: 30px;
-
+  margin: 30px;
   min-height: fit-content;
   max-width: 1600px;
   width: 100%;
@@ -1055,8 +1053,7 @@ li{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 50px;
-  padding-inline: 50px;
+  padding: 50px;
   background-image: url(../design/circle.svg);
   background-position: right;
   background-size: cover;
@@ -1072,7 +1069,7 @@ li{
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-block: 30px;
+  margin: 30px;
   min-height: fit-content;
   max-width: 1600px;
   width: 100%;
@@ -1211,8 +1208,7 @@ li{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 50px;
-  padding-inline: 50px;
+  padding: 50px;
   background-image: url(../design/steps.svg);
   background-position: bottom;
   background-size: cover;
@@ -1228,7 +1224,7 @@ li{
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-block: 30px;
+  margin: 30px;
   min-height: fit-content;
   max-width: 1600px;
   width: 100%;

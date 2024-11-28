@@ -1004,7 +1004,7 @@ li{
   justify-content: center;
   flex-direction: column;
   border-radius: 6px;
-  box-shadow: #b1a7a6 0px 2px 0px -2px, #b1a7a6 0px 0px 0px 1px;
+  box-shadow: #b1a7a6 0px 2px 0px -2px, #b1a7a6 0px 0px 0px 2px;
   height: 130px;
   width: 150px;
   transition: all 450ms;

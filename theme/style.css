@@ -92,7 +92,7 @@ nav
   align-items: center;
   justify-content: space-around;
   overflow: hidden;
-  padding: 15px 20px;
+  padding: 15px 30px;
   width: 100%;
   z-index: 1000;
 }
@@ -100,8 +100,7 @@ nav
 .logo{
   display: flex;
   position: relative;
-  justify-content: left;
-  align-items: center;
+  padding-inline-start: 20px;
   height: fit-content;
 }
 
@@ -114,8 +113,8 @@ nav
 nav ul{
   list-style: none;
   display: flex;
-  justify-content: right;
   align-items: center;
+  justify-content: right;
   width: 100%;
 }
 
@@ -171,9 +170,9 @@ nav ul{
 }
 
 .shown{
-  color: #0b090a;
   gap: 10px;
 }
+
 .menu-button i{
   font-size: 1.7rem;
   color: #333d29;
@@ -189,10 +188,9 @@ nav ul{
 
 .shown li a 
 {
-text-decoration: none;
 padding: 6px 10px;
-border-radius: 10px;
 color: #0b090a;
+border-radius: 12px;
 }
 
 nav li .use:hover{
@@ -1735,6 +1733,9 @@ footer .rain-2{
 }
 
 @media screen and (max-width: 800px){
+  .logo{
+    padding-inline-start: 0px;
+  }
   .hide{
     display: none;
   }

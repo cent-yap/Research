@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -167,7 +166,7 @@ main{
 
 .container input{
     background: #edf2f4;
-    color: light-dark(#edf2f4, #0b090a);
+    color: #0b090a;
     border: unset;
     outline: none;
     margin: 8px 0;

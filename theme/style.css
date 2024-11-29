@@ -878,6 +878,7 @@ li{
   position: relative;
   align-items: center;
   justify-content: center;
+  gap: 30px;
   margin: 30px;
   min-height: fit-content;
   max-width: 1600px;
@@ -1056,6 +1057,7 @@ li{
   position: relative;
   align-items: center;
   justify-content: center;
+  gap: 30px;
   margin: 30px;
   min-height: fit-content;
   max-width: 1600px;
@@ -1141,8 +1143,8 @@ li{
 }
 
 .eg .lom h1{
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   padding: 10px;
 }
 
@@ -1166,7 +1168,7 @@ li{
   border-radius: 6px;
   padding-bottom: 10px;
   height: 330px;
-  width: 500px;
+  width: 100%;
   background: light-dark(#edf2f4, #0b090a);
   transition: all 450ms;
   overflow: hidden;
@@ -1178,7 +1180,7 @@ li{
 
 .eg .lom .vate .box img{
   height: 300px;
-  width: 475px;
+  min-width: 475px;
   filter: saturate(1.2);
   filter: contrast(1.2);
   filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
@@ -1211,6 +1213,7 @@ li{
   position: relative;
   align-items: center;
   justify-content: center;
+  gap: 30px;
   margin: 30px;
   min-height: fit-content;
   max-width: 1600px;
@@ -1330,12 +1333,13 @@ li{
   justify-content: center;
   flex-direction: column;
   border-radius: 6px;
-  height: fit-content;
-  width: 500px;
   outline: 2px inset #b1a7a6;
   background: light-dark(#edf2f4, #0b090a);
   transition: all 450ms;
   overflow: hidden;
+  height: fit-content;
+  min-width: 500px;
+  width: 100%;
 }
 
 .fg .lom  .vate .box:hover{
@@ -1355,6 +1359,7 @@ li{
 .box .inline .fol{
   display: flex;
   position: relative;
+  align-items: center;
   justify-content: left;
   height: 150px;
   width: 100%;

@@ -78,7 +78,6 @@ nav
   position: relative;
   align-items: center;
   justify-content: space-around;
-  overflow: hidden;
   padding: 15px 30px;
   width: 100%;
   z-index: 1000;
@@ -228,6 +227,46 @@ transition: all 0.1s;
 .btn button:active{
   transform: scale(0.96);
   }
+
+  .drop-down{
+   position: relative;
+  }
+
+  .drop-down-list {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    padding: 8px 0;
+    background: azure;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 15px;
+    margin: 15px 0;
+    margin-inline-start: 5px;
+    min-height: fit-content;
+    width: 250px;
+    z-index: 10;
+}
+
+.shown .use .down{
+  font-size: .7rem;
+}
+
+.drop-down-list li a{
+  display: flex;
+  justify-content: left;
+  color: #0b090a;
+  font-size: .9rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.drop-down-list li a:hover {
+    background: #edf2fb;
+    outline: 1px outset #ccc;
+    border-radius: 6px;
+}
 
 .bg{
   display: flex;
@@ -1720,7 +1759,7 @@ footer .rain-2{
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 700px){
   .logo{
     padding-inline-start: 0px;
   }

@@ -1180,7 +1180,7 @@ li{
 
 .eg .lom .vate .box img{
   height: 300px;
-  min-width: 475px;
+  min-width: 100%;
   filter: saturate(1.2);
   filter: contrast(1.2);
   filter: drop-shadow(0 0 0.1rem light-dark(#b1a7a6, #343a40));
